@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "555577184971",
+    "firebase_url": "https://setup-game-16fe2-default-rtdb.firebaseio.com",
+    "project_id": "setup-game-16fe2",
+    "storage_bucket": "setup-game-16fe2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555577184971:android:06ad45382c591550d4c14e",
+        "android_client_info": {
+          "package_name": "com.example.setupgame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCM-b5x6z1OGlXbm8mTxEDHblW9jGbrps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555577184971:android:2a04850b8ba3999ed4c14e",
+        "android_client_info": {
+          "package_name": "com.example.setupgameadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCM-b5x6z1OGlXbm8mTxEDHblW9jGbrps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

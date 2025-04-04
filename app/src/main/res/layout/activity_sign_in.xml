@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/bg_gradient" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Email Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="@android:color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:hintTextColor="@color/White"
+            android:textColorHint="@color/White"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/White"
+                android:drawableLeft="@drawable/email"
+                style="@style/CustomEditText"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="@android:color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:textColorHint="@color/White"
+            app:hintTextColor="@color/White"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/White"
+                android:drawableLeft="@drawable/lock"
+                android:inputType="textPassword"
+                style="@style/CustomEditText"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:backgroundTint="@color/Purple"
+            android:layout_marginTop="20dp" />
+
+        <!-- Forget Password Text -->
+        <TextView
+            android:id="@+id/textViewForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/OrangeRed"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Register Text Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!-- "Don't have an account?" Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Don't have an account?" />
+
+            <!-- "Register Now" Text -->
+            <TextView
+                android:id="@+id/textViewRegisterNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Now"
+                android:textColor="@color/Green"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
